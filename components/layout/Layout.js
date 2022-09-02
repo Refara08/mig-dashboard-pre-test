@@ -5,9 +5,9 @@ const Layout = (props) => {
   return (
     <div className="bg-greenish-gray text-black flex">
       <SideNav />
-      <div className="px-8 py-4 w-full">
+      <div className="px-8 py-4 w-full h-screen overflow-y-scroll flex flex-col">
         <TopNav />
-        <main>{props.children}</main>
+        <main className="flex-[1]">{props.children}</main>
       </div>
     </div>
   );

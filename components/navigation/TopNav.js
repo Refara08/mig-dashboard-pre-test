@@ -6,7 +6,7 @@ import BellIcon from "../ui/icons/BellIcon";
 
 const TopNav = () => {
   return (
-    <div className="flex justify-between items-center w-full">
+    <div className="flex justify-between items-center w-full mb-6">
       <div className="flex items-center text-gray">
         <p>Perusahaan</p>
         <ChevronRightIcon size={"2vh"} />

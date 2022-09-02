@@ -77,7 +77,7 @@ const SideNav = () => {
   return (
     <div
       id="navigation"
-      className="bg-white text-gray flex flex-col justify-start items-center h-screen pt-[2%]"
+      className="bg-white text-gray flex flex-col justify-start items-center h-screen pt-[2%] z-30"
     >
       <Link href={"/"}>
         <a>
