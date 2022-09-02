@@ -28,3 +28,15 @@ a {
     background: black;
   }
 }
+
+#navigation ul {
+  @apply flex flex-col py-[20%];
+}
+
+#navigation li {
+  @apply py-3 px-4 border-l-4 transition-all duration-300;
+}
+
+#navigation li:hover {
+  @apply bg-slate-100 border-mygreen;
+}
