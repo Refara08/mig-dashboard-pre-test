@@ -56,7 +56,7 @@ const CompanyInfo = () => {
               {isCompanyActive ? (
                 <span className="text-green-700 font-bold">Aktif</span>
               ) : (
-                <span className="font-bold">Tidak Aktif</span>
+                <span className="font-bold text-red-600">Tidak Aktif</span>
               )}
             </label>
             <Toggle

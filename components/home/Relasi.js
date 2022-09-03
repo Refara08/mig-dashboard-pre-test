@@ -15,7 +15,10 @@ const Relasi = () => {
       </div>
       <div className="px-6 py-4 lg:py-0 flex flex-col justify-evenly flex-[1]">
         {relasiArr.map((item) => (
-          <div key={item.tag} className="flex items-center gap-3 py-3 lg:py-0">
+          <div
+            key={item.tag}
+            className="flex items-center gap-3 py-3 lg:py-0 transition-all duration-300 hover:scale-95"
+          >
             <ShareIcon size="4vh" />
             <div>
               <p className="text-2xl font-bold">{item.qty}</p>
