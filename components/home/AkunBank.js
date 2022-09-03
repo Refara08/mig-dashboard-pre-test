@@ -29,7 +29,7 @@ const AkunBank = () => {
       {bankAccArr.map((item, index) => (
         <div
           key={index}
-          className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 px-6 pb-4 gap-4 mb-4 rounded-lg transition-all duration-300 hover:scale-95 hover:-translate-y-2 hover:shadow-lg"
+          className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 px-6 pb-4 gap-4 mb-4 rounded-lg transition-all duration-300 hover:scale-95 hover:-translate-y-1"
         >
           <div className={`h-[110px] rounded-xl relative ${item.cardColor}`}>
             <span className="absolute bottom-2 right-4 text-lg text-white font-extrabold tracking-widest">

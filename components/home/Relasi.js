@@ -8,7 +8,7 @@ const relasiArr = [
 
 const Relasi = () => {
   return (
-    <div className="bg-white shadow-lg rounded-lg flex flex-col pb-6">
+    <div className="bg-white shadow-lg rounded-lg flex flex-col pb-6 mb-4">
       <div className="flex justify-between items-center pt-4 pb-1 px-6 ">
         <h3 className="font-bold text-lg">Relasi</h3>
         <p className="text-green-700 cursor-pointer">Lihat semua</p>
