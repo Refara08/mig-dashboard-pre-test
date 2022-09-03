@@ -17,8 +17,8 @@ import SearchDollarIcon from "../ui/icons/SearchDollarIcon";
 import TasksIcon from "../ui/icons/TasksIcon";
 import TicketIcon from "../ui/icons/TicketIcon";
 
-const iconSize = "2.5vh";
-const navList = {
+export const iconSize = "2.5vh";
+export const navList = {
   group1: [
     {
       jsx: <HomeIcon size={iconSize} />,
@@ -63,10 +63,12 @@ const navList = {
       id: "search",
     },
   ],
-  group3: {
-    jsx: <FilePlusIcon size={iconSize} />,
-    id: "file",
-  },
+  group3: [
+    {
+      jsx: <FilePlusIcon size={iconSize} />,
+      id: "file",
+    },
+  ],
 };
 
 const SideNav = () => {
@@ -116,13 +118,16 @@ const SideNav = () => {
           ))}
         </ul>
         <ul>
-          <SideNavItem
-            identifier={navList.group3.id}
-            currState={currNav}
-            changeCurrNav={changeCurrNavHandler}
-          >
-            {navList.group3.jsx}
-          </SideNavItem>
+          {navList.group3.map((item, index) => (
+            <SideNavItem
+              key={index}
+              identifier={item.id}
+              currState={currNav}
+              changeCurrNav={changeCurrNavHandler}
+            >
+              {item.jsx}
+            </SideNavItem>
+          ))}
         </ul>
       </nav>
     </div>

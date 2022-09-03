@@ -1,5 +1,6 @@
 import SideNav from "../navigation/SideNav";
 import TopNav from "../navigation/TopNav";
+import MobileNav from "../navigation/mobile-nav/MobileNav";
 
 const Layout = (props) => {
   return (
@@ -11,9 +12,9 @@ const Layout = (props) => {
           <main className="flex-[1] pb-4">{props.children}</main>
         </div>
       </div>
-      <div className="block md:hidden bg-greenish-gray text-black px-8 py-4">
-        <p>heloo mobile nav here</p>
-        <main>{props.children}</main>
+      <div className="block md:hidden bg-greenish-gray text-black">
+        <MobileNav />
+        <main className=" px-4">{props.children}</main>
       </div>
     </>
   );

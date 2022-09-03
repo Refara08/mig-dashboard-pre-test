@@ -28,7 +28,7 @@ const TopNavSearchBar = () => {
           />
         </fieldset>
       </form>
-      <div onClick={toggleSearchBarHandler}>
+      <div className="cursor-pointer" onClick={toggleSearchBarHandler}>
         {isSearching ? <CloseIcon size={"2vh"} /> : <SearchIcon size={"2vh"} />}
       </div>
     </div>

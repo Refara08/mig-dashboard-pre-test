@@ -29,7 +29,7 @@ const AkunBank = () => {
       {bankAccArr.map((item, index) => (
         <div
           key={index}
-          className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 px-6 gap-4 mb-4"
+          className="stagger-right grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 px-6 gap-4 mb-4"
         >
           <div className={`h-[110px] rounded-xl relative ${item.cardColor}`}>
             <span className="absolute bottom-2 right-4 text-lg text-white font-extrabold tracking-widest">
@@ -38,7 +38,7 @@ const AkunBank = () => {
           </div>
           <div className="col-span-2 flex flex-col justify-between">
             <div className=" flex justify-between items-center">
-              <h4 className="font-semibold">{item.bankName}</h4>
+              <h4 className="font-semibold mb-3">{item.bankName}</h4>
               <div className="text-green-700 flex items-center gap-4">
                 <PencilIcon size="2vh" />
                 <TrashIcon size="2vh" />

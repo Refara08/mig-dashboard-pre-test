@@ -17,7 +17,7 @@ const CompanyInfo = () => {
     setIsCompanyActive((prev) => !prev);
   };
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden h-full">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden h-full lg:w-[350px]">
       <div className="h-[200px] relative">
         <div className="h-2/3 overflow-hidden">
           <Image
@@ -50,7 +50,7 @@ const CompanyInfo = () => {
       {/* ------ */}
       <div className="px-4 mb-12 text-sm">
         <div className="mb-4">
-          <h3 className="text-gray text-xs">Status Perusahaan</h3>
+          <h3 className="text-gray text-xs mb-2">Status Perusahaan</h3>
           <div className="flex justify-between items-center">
             <label htmlFor="company-status">
               {isCompanyActive ? (
@@ -68,27 +68,27 @@ const CompanyInfo = () => {
         </div>
 
         <div className="mb-4">
-          <h3 className="text-gray text-xs">Singkatan</h3>
+          <h3 className="text-gray text-xs mb-2">Singkatan</h3>
           <p>MIG</p>
         </div>
 
         <div className="mb-4">
-          <h3 className="text-gray text-xs">Alamat Perusahaan</h3>
+          <h3 className="text-gray text-xs mb-2">Alamat Perusahaan</h3>
           <p>Jl. Tebet Raya No.42, Jakarta Selatan</p>
         </div>
 
         <div className="mb-4">
-          <h3 className="text-gray text-xs">Penanggung Jawab (PIC)</h3>
+          <h3 className="text-gray text-xs mb-2">Penanggung Jawab (PIC)</h3>
           <p>John Doe</p>
         </div>
 
         <div className="mb-4">
-          <h3 className="text-gray text-xs">Tanggal PKP</h3>
+          <h3 className="text-gray text-xs mb-2">Tanggal PKP</h3>
           <p>03 Maret 2021</p>
         </div>
 
         <div className="mb-4">
-          <h3 className="text-gray text-xs">E-mail</h3>
+          <h3 className="text-gray text-xs mb-2">E-mail</h3>
           <p className="text-green-700 flex items-center justify-start gap-2 cursor-pointer">
             <span>
               <MailIcon size="2vh" />
@@ -98,7 +98,7 @@ const CompanyInfo = () => {
         </div>
 
         <div className="mb-4">
-          <h3 className="text-gray text-xs">No. Telp</h3>
+          <h3 className="text-gray text-xs mb-2">No. Telp</h3>
           <p className="text-green-700 flex items-center justify-start gap-2 cursor-pointer">
             <span>
               <PhoneIcon size="2vh" />
@@ -108,7 +108,7 @@ const CompanyInfo = () => {
         </div>
 
         <div className="mb-4">
-          <h3 className="text-gray text-xs">Situs Web</h3>
+          <h3 className="text-gray text-xs mb-2">Situs Web</h3>
           <p className="text-green-700 flex items-center justify-start gap-2 cursor-pointer">
             <span>
               <GlobeIcon size="2vh" />

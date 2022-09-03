@@ -13,13 +13,13 @@ const Relasi = () => {
         <h3 className="font-bold text-lg">Relasi</h3>
         <p className="text-green-700 cursor-pointer">Lihat semua</p>
       </div>
-      <div className="px-6 flex flex-col justify-evenly flex-[1]">
+      <div className="px-6 py-4 lg:py-0 flex flex-col justify-evenly flex-[1]">
         {relasiArr.map((item) => (
-          <div key={item.tag} className="flex items-center gap-3">
+          <div key={item.tag} className="flex items-center gap-3 py-3 lg:py-0">
             <ShareIcon size="4vh" />
             <div>
-              <p>{item.qty}</p>
-              <p>{item.tag}</p>
+              <p className="text-2xl font-bold">{item.qty}</p>
+              <p className="text-gray">{item.tag}</p>
             </div>
           </div>
         ))}
