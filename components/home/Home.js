@@ -1,10 +1,11 @@
 import CompanyInfo from "./CompanyInfo";
+import CompanyDetails from "./CompanyDetails";
 
 const Home = () => {
   return (
-    <div className="flex h-full">
+    <div className="flex flex-col md:flex-row gap-8 h-full">
       <CompanyInfo />
-      <div>side home</div>
+      <CompanyDetails />
     </div>
   );
 };

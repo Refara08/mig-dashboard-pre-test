@@ -25,6 +25,8 @@ const CompanyInfo = () => {
             alt="company background image"
             width={"300px"}
             height={"200px"}
+            layout="responsive"
+            priority={true}
           />
         </div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 rounded-full overflow-hidden border-2 border-blue-400 bg-white ">

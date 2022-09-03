@@ -6,13 +6,13 @@ import BellIcon from "../ui/icons/BellIcon";
 
 const TopNav = () => {
   return (
-    <div className="flex justify-between items-center w-full mb-6">
-      <div className="flex items-center text-gray">
+    <div className="flex flex-col md:flex-row justify-between md:items-center w-full mb-6">
+      <div className="flex justify-start items-center text-gray">
         <p>Perusahaan</p>
         <ChevronRightIcon size={"2vh"} />
         <p className="text-black font-bold">Mitramas Infosys Global</p>
       </div>
-      <div className="flex items-center gap-6">
+      <div className="flex justify-end items-center gap-6">
         <TopNavSearchBar />
         <BellIcon size={"2vh"} />
         <div>
@@ -23,7 +23,7 @@ const TopNav = () => {
               width={"35px"}
               height={"35px"}
             />
-            <p>Jhon Doe</p>
+            <p className="hidden md:block">Jhon Doe</p>
           </div>
         </div>
       </div>
